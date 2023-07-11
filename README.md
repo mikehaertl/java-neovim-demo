@@ -13,4 +13,6 @@ cd ..
 :q
 
 ./start-nvim
+# Wait some time (~ 1 minute) until Mason completes.
+# To check progress try :Mason
 ```
