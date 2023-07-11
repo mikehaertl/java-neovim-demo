@@ -28,3 +28,12 @@ application {
     // Define the main class for the application.
     mainClass.set("java.neovim.demo.App")
 }
+
+java {
+    toolchain {
+        // we use a fixed version to ensure, that gradle installs it
+        // to ~/.gradle/jdks/eclipse_adoptium-17-amd64-linuxcp
+        languageVersion.set(JavaLanguageVersion.of(17))
+        vendor.set(JvmVendorSpec.ADOPTIUM)
+    }
+}

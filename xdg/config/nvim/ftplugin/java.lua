@@ -1,5 +1,7 @@
 -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
 
+local jdk_path = vim.fn.expand('$HOME/.gradle/jdks/eclipse_adoptium-17-*/jdk-17*/bin/java')
+
 -- nvim data and config path (:h stdpath)
 local nvim_data_path = vim.fn.stdpath('data') .. '/'
 -- location where mason installs jdts
@@ -18,7 +20,7 @@ local config = {
   -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
   cmd = {
 
-    '/home/mike/.sdkman/candidates/java/17.0.6-tem/bin/java',
+    jdk_path,
 
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
     '-Dosgi.bundles.defaultStartLevel=4',
