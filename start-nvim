@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export XDG_CONFIG_HOME=$(pwd)/xdg/config
+export XDG_DATA_HOME=$(pwd)/xdg/data
+
+# Start nvim
+nvim
