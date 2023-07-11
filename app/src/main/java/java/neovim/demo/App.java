@@ -3,7 +3,13 @@
  */
 package java.neovim.demo;
 
+import lombok.Getter;
+
 public class App {
+
+    @Getter
+    private String test = "test";
+
     public String getGreeting() {
         return "Hello World!";
     }

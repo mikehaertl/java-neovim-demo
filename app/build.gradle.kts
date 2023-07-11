@@ -17,7 +17,8 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor(group = "org.projectlombok", name = "lombok", version = "1.18.28")
+    implementation("org.projectlombok:lombok:1.18.28")
+    annotationProcessor("org.projectlombok:lombok:1.18.28")
 
     // Use JUnit test framework.
     testImplementation("junit:junit:4.13.2")
