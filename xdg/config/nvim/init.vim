@@ -185,8 +185,11 @@ require("lspsaga").setup({
       close = '<c-c>k'
     },
   },
+  implement = {
+    enable = false,
+  },
   lightbulb = {
-    virtual_text = false,
+    enable = false,
   },
   outline = {
     win_width = 60,
@@ -262,7 +265,7 @@ EOF
 lua << EOF
 
 -- Uncomment to create log in ~/.cache/nvim/lsp.log
--- vim.lsp.set_log_level("debug")
+vim.lsp.set_log_level("debug")
 
 -- Manages/installs external LSP servers. We don't install via :Mason to
 -- keep all configurations in this file.
